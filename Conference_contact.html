@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=fr>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="CSSTD7_1/003.css"><!--Feuille de style externe CSS-->
+        <title>
+            Contact
+        </title>
+    </head>
+    <body>
+        
+        <h1>
+            Contact
+        </h1>
+        <img src="Images/Feedback.png" alt="Image représentatif d'un Feedback" style="display:block; margin:0 auto;">
+         
+         <h2><p style="background-color: aliceblue;">
+            <a href="Conference_accueil.html" target="_blank">Revenir au menu</a></br>
+            <a href="Conference_auteur.html" target="_blank" style="background-color: aliceblue;">En savoir plus sur l'auteur (Surya Ganguli) ?</a>
+            </p></h2>
+
+            <p>
+            * : Champs obligatoires 
+            <!--Au début pour que le lecteur d'écran previenne les malvoyants par exemple-->
+         </p>
+         
+            <fieldset>
+                <legend>Votre Feedback :</legend>
+                    <label for ="nom">
+                        *Nom :
+                    </label>
+                    <input type="text" id= "nom " /><br>
+
+                    <label for ="prénom">
+                        *Prénom :
+                    </label>
+                    <input type="text" id= "prénom " />
+                    <br>
+                    
+                    *Vous êtes un :
+                    <select>
+                        <option value ="étudiant">
+                            Étudiant
+                        </option>
+                         <option value ="enseignant">
+                            Enseignant
+                        </option>
+                         <option value ="chercheur">
+                            Chercheur
+                        </option>
+                         <option value ="grandpublic">
+                            Grand public
+                        </option>
+                         <option value ="autre">
+                            Autre
+                        </option>
+                    </select><br> 
+
+                    Si vous avez sélectionné autre, vous êtes : 
+                        <textarea rows="1" cols="20"></textarea><br>
+
+                    Combien d'étoiles donnez vous à notre presentation web ? :
+                    <label for ="1">1</label> 
+                        <input type="radio" name="etoiles" id="1" value="1" />
+                        <label for ="2">2</label> 
+                        <input type="radio" name="etoiles" id="2" value="2" />
+                        <label for ="3">3</label> 
+                        <input type="radio" name="etoiles" id="3" value="3" />
+                        <label for ="4">4</label> 
+                        <input type="radio" name="etoiles" id="4" value="4" />
+                        <label for ="5">5</label> 
+                        <input type="radio" name="etoiles" id="5" value="5" /> <br />
+                    
+                    <label for="impact">*Quel est votre point de vue après la conférence ?</label>
+                    <select id="impact" name="impact" required>
+                    <option value="" disabled selected>-- Sélectionnez une option --</option>
+
+                    <optgroup label="IA vs Cerveau humain">
+                        <option value="ai_equals_brain">L’IA pourra égaler le cerveau humain</option>
+                        <option value="ai_partial_match">L’IA égalera certaines fonctions seulement</option>
+                        <option value="ai_different">L’IA restera fondamentalement différente</option>
+                        <option value="too_early">Il est trop tôt pour se prononcer</option>
+                    </optgroup>
+
+                    <optgroup label="Impact de la conférence">
+                        <option value="motivation">Envie d’approfondir le sujet</option>
+                        <option value="changement">A changé mon point de vue</option>
+                        <option value="confirmation">A confirmé mon opinion</option>
+                        <option value="0impacts">Peu ou pas d’impact</option>
+                    </optgroup>
+                    </select><br>
+
+                    Commentaires sur le sujet "<em>Can AI match with human brain" :</em>
+                    <textarea rows="5" cols="100"></textarea><br>
+
+                    <input type="submit" value="Envoyer" id="envoyer" />
+
+            </fieldset>
+            
+    </body>
+</html>
